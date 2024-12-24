@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock paper scissor</title>
+    <link rel="stylesheet" href="./rock paper scissor.css" />
+  </head>
+  <body>
+    <p class="title">Rock Paper Scissor</p>
+
+    <button class="gameButton rockButton">
+      <img src="images/rock.png" class="img-button" />
+    </button>
+
+    <button class="gameButton paperButton">
+      <img src="images/paper.png" class="img-button" />
+    </button>
+
+    <button class="gameButton scisorButton">
+      <img src="images/scissor.png" class="img-button" />
+    </button>
+
+    <p id="displayResult"></p>
+
+    <p id="displayBothMoves"></p>
+
+    <p
+      class="displayResult"
+      onclick="displayCounterResult()"
+      style="margin: 30px 0px"
+    ></p>
+
+    <button
+      class="reset-button"
+      onclick="counter.winCount = 0; counter.looseCount = 0; counter.drawCount = 0;
+      // JSON.stringify(localStorage.getItem('counter'));
+      // JSON.parse(localStorage.setItem('counter'))
+      displayCounterResult();"
+    >
+      Reset
+    </button>
+
+    <button id="autoplay">Autoplay</button>
+    <script src="./Rock paper scissor.js"></script>
+  </body>
+</html>

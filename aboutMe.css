@@ -1,0 +1,31 @@
+/* for about me page */
+.about-me {
+  font-size: large;
+  color: #fff;
+  font-family: poppins,sans-serif;
+  padding: 50px;
+  margin:  150px 210px;
+  border-radius: 3%;
+  background-color: #081b29;
+  background-color: rgba(52, 81, 225, 0.136);
+  box-shadow: 0px 0px 10px rgba(213, 192, 192, 0.526);
+}
+
+.about-me h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #007ced;
+}
+
+.about-me p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about-me h3{
+  color: #007ced;
+}
+.about-me h4{
+  color: #6dace7;
+}

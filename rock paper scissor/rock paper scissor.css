@@ -1,0 +1,52 @@
+      body {
+        background-color: black;
+        color: white;
+      }
+      .gameButton {
+        cursor: pointer;
+        background-color: transparent;
+        border-radius: 50%;
+        /* border: none; */
+        border: 3px solid white;
+        width: 120px;
+        height: 120px;
+        margin: 10px;
+        /* background-color: transparent; */
+      }
+      .title {
+        font-size: 30px;
+        font-family: arial;
+        font-weight: bold;
+      }
+
+      .img-button {
+        width: 100px;
+        height: 100px;
+        /* padding-right: 3px; */
+        border-radius: 50%;
+        margin: 0px;
+        background-color: transparent;
+      }
+
+      .img-display {
+        width: 40px;
+        height: 40px;
+        /* padding-right: 3px; */
+        border-radius: 50%;
+        margin: 10px;
+        margin-bottom: -5px;
+        background-color: transparent;
+      }
+      
+      #displayResult {
+        font-weight: bold;
+        font-size: 25px;
+      }
+
+      #autoplay,
+      .reset-button {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
+      }

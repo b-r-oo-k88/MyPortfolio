@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins,sans-serif;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+    background-color: #081b29;
+    background-image: url(images/background.jpg) ;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar{
+    width: 86%;
+    padding: 30px 0 30px;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo{
+    font-size: 23px;
+    font-weight: 500;
+    color:#fff;
+}
+.logo span{
+    font-size: 24px;
+    font-weight: 600;
+    color:#007ced
+}
+
+.navlinks{
+    font-size: 21px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+nav .navlinks a:hover,
+.navlinks a.active{
+    color: #007ced;
+}
+
+nav .navlinks li{
+    display: inline-block;
+}
+nav .navlinks li a{
+     color:#e5e5e5;
+     margin-right: 2.5rem;
+}
+
+.hero-header{
+    margin: 0 210px;
+}
+.wrapper{
+    margin: 30px auto;
+    padding: 10px 20px;
+    box-shadow: 0  0  10px rgba(130, 112, 112, 0.4);
+    border-radius: 4%;
+    background-color: rgba(52, 81, 225, 0.136);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:4rem;
+    margin: 40px 0px;
+    padding: 100px;
+}
+.container .hero-pic{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 15px solid #444;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+}
+.hero-pic img{
+    margin-left: 2px;
+    margin-top: 0px;
+    height: 300px;
+    width: 300px;
+    transition: 0.5s;
+}
+.hero-pic img:hover{
+    transform: scale(1.2);
+}
+.hero-text{
+    margin-left: 30px;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: 400px;;
+    padding: 10px 0px;
+}
+.hero-text h3{
+    color:#e5e5e5;
+    font-size: 14px;
+    margin: 20px 10px 0px; 
+    font-weight: 600;
+}
+.hero-text h3 span{
+    color:#007ced;
+    font-size: 20px;
+}
+.hero-text h1{
+    color: #007ced;
+    font-size: 3rem;
+    margin: 10px 0;
+}
+.hero-text p{
+    color:#e5e5e5;
+    font-size: 20px;
+}
+.btn-group{
+    margin:45px 0;
+}
+.btn{
+    border-color: #d5d5d5;
+    color:#fff;
+    background-color: #333;
+    padding: 12px 25px;
+    margin: 5px 0px;
+    margin-right:7px;
+    border-radius: 30px;
+    border:2px solid #e5e5e5;
+    box-shadow:  0 10px 10px -8px rgb(0 0 0 / 78%);
+}
+.btn.active{
+    border-color: #007ced;
+}
+.hero-text .social i{
+    color: #e5e5e5;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+.hero-text .social i:hover{
+    color:#007ced;
+    transform: rotate(360deg);
+}
+/* Respnosiv design & displaying navbar for small screen */
+ @media(max-width:930px)
+{
+    nav .togglebtn{
+        display: initial;
+    }
+    /* for toggle button**/
+    .click {
+        top:45px;
+    }
+    .click span{
+        position: absolute;
+        margin-top:12px
+    }
+    .click span:first-child{
+        transform: rotate(-40deg);
+    }
+    .click span:nth-child(2)
+    {
+        opacity: 0;
+        margin:0;
+    }
+    .click span:last-child{
+        transform: rotate(45deg);
+        top:0;
+    }
+    nav .navlinks{
+        position: absolute;
+        top:110px;
+        right:-100%;
+        bottom: 0;
+        width: 60%;
+        height: 100vh;
+        background-color: #222;
+        z-index: 3;
+        box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
+        transition: 0.5s;
+        padding: 25px 0px;
+    }
+    nav .navlinks li{
+        display: block;
+    }
+    nav .navlinks li a{
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    nav .navlinks.open{
+        right:0;
+    }
+} 
+@media(max-width:768px)
+{
+    .container{
+        flex-direction: column;
+        padding-top:2rem
+    }
+    .hero-text{
+        padding:40px 0px;
+    }
+}
